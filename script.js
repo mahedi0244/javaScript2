@@ -6,19 +6,19 @@ function func(s){
 }
 
 function Multiplier () { 
-	var currentValue = null;
+	this.currentValue = null;
 	this.multiply=function(num){
-		if (currentValue == null){
-			currentValue = num*1;
+		if (this.currentValue == null){
+			this.currentValue = num*1;
 			return num*1;
 		}
 		else{
-			currentValue *= num;
-			return currentValue;
+			this.currentValue *= num;
+			return this.currentValue;
 		}
 	} 
 	this.getCurrentValue=function(){
-		return currentValue;
+		return this.currentValue;
 
 	}
 }
