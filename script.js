@@ -23,6 +23,15 @@ function Multiplier () {
 	}
 }
 
+function photo (){
+	this.name = null;
+	this.location = null;
+}
+
+function album (){
+	this.arr = [];
+}
+
 var M1 = new Multiplier();
 alert(M1.multiply(2));
 alert(M1.multiply(5));
