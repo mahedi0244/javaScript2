@@ -23,19 +23,32 @@ function Multiplier () {
 	}
 }
 
-function photo (){
-	this.name = null;
-	this.location = null;
+function photo (name, location){
+	this.name = name;
+	this.location = location;
 }
 
 function album (){
-	this.arr = [];
+	this.photos = [];
 }
 
 var M1 = new Multiplier();
-alert(M1.multiply(2));
-alert(M1.multiply(5));
+var p1 = new photo("mahedi", "queens");
+var p2 = new photo("John", "Manhattan");
+var a1 = new album();
+a1.photos[0] = p1;
+a1.photos[1] = p2;
+//alert(M1.multiply(2));
+//alert(M1.multiply(5));
 func(M1);
+func(p1);
+
+
+for (i=0; i<a1.photos.length; i++)
+	alert(a1.photos[i].location);
+
+
+
 
 
 
